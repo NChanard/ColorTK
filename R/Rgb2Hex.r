@@ -24,7 +24,7 @@ Rgb2Hex <- function(rgb.col=NULL, alpha.bln=FALSE){
         }
     }
     if(!alpha.bln){
-        hex.col <- substr(hex.col,1,nchar(hex.col)-2)
+        hex.col <- stringr::str_sub(hex.col,1,nchar(hex.col)-2)
     }
     return(hex.col)
 }

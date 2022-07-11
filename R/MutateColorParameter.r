@@ -20,7 +20,7 @@
 #' MutateColorParameter(color.col="#ebb0107f",operation.str="+",parameter.str="light",alpha.bln=TRUE,prctMutation.num=0.2)
 MutateColorParameter <- function(color.col=NULL, operation.str=NULL, parameter.str=NULL,  alpha.bln=FALSE, prctMutation.num = 0.2){
     if(GetColorFormat(color.col) %in% c("Rgb","Hex","Hsl") && operation.str %in% c("=","+","-","*","/","%*%","%/%") && parameter.str %in% c("saturation","light","alpha") && 0 <= prctMutation.num & prctMutation.num <= 1){
-        format.str=GetColorFormat(color.col)
+        format.str <- GetColorFormat(color.col)
         if(format.str %in% c("Rgb","Hex")){color.col <- ConvertColorFormat(color.col=color.col, alpha.bln=alpha.bln, format.str="Hsl")}
 
         if (length(color.col) == 3){

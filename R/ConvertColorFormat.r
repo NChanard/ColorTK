@@ -14,7 +14,7 @@
 #' ConvertColorFormat(c(43.8,0.873,0.492,0.498), alpha.bln=TRUE, format.str="Hex")
 ConvertColorFormat <- function(color.col=NULL, alpha.bln=FALSE, format.str="Hex"){
     format.str <- tolower(format.str)
-    substr(format.str, 1, 1) <- toupper(substr(format.str, 1, 1))
+    stringr::str_sub(format.str, 1, 1) <- toupper(stringr::str_sub(format.str, 1, 1))
     if(format.str %in% c("Rgb","Hex","Hsl") & is_not_in(GetColorFormat(color.col) , c(format.str,"Unknown"))){
         eval(parse(text=paste0(GetColorFormat(color.col),"2",format.str)))(color.col, alpha.bln) %>% return
     }else{

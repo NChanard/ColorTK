@@ -8,4 +8,4 @@
 #' is.hex("#FFFFFF")
 #' is.hex(c(125,125,125))
 #' is.hex(c(43.8,0.873,0.492))
-is.hex <- function(color.col=NULL){is.character(color.col) && nchar(color.col) %in% c(7,9) && substr(color.col,1,1) == '#' && stringr::str_remove_all(color.col,"[a-fA-F0-9]") == "#"}
+is.hex <- function(color.col=NULL){is.character(color.col) && nchar(color.col) %in% c(7,9) && stringr::str_sub(color.col,1,1) == '#' && stringr::str_remove_all(color.col,"[a-fA-F0-9]") == "#"}
