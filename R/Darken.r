@@ -7,6 +7,6 @@
 #' @examples
 #' Darken("#ebb0107f",alpha.bln=TRUE)
 Darken <- function(color.col=NULL, alpha.bln=FALSE){
-    ColorToolKit::MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.25) %>% return
+    ColorTK::MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.25) %>% return(.)
 }
         

@@ -39,5 +39,11 @@ An integer vector of the color's rgb code
 Modify a color parameter as saturation, light or alpha parameter
 }
 \examples{
-MutateColorParameter(color.col="#ebb0107f",operation.str="+",parameter.str="light",alpha.bln=TRUE,prctMutation.num=0.2)
+MutateColorParameter(
+    color.col="#ebb0107f",
+    operation.str="+",
+    parameter.str="light",
+    alpha.bln=TRUE,
+    prctMutation.num=0.2
+)
 }

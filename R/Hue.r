@@ -31,12 +31,12 @@ Hue <- function(paletteLength.num=9, rotation.num=NULL, hueRange.num=c(0,360), s
         }
         hue.lst <- seq(hueRange.num[1],hueRange.num[2],length.out=paletteLength.num)%%360
     }else if(paletteLength.num==2){
-        hue.lst <- ColorToolKit::Hue(paletteLength.num=5, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[c(2,3)]
+        hue.lst <- ColorTK::Hue(paletteLength.num=5, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[c(2,3)]
     }else if(paletteLength.num==1){
-        hue.lst <- ColorToolKit::Hue(paletteLength.num=3, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[2]
+        hue.lst <- ColorTK::Hue(paletteLength.num=3, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[2]
     }
     if(is.numeric(hue.lst)){
-        hue.lst %>% lapply(.,function(hue.num){ColorToolKit::Hsl2Hex(c(hue=hue.num,saturation=saturation.num,light=lightness.num,alpha=alpha.num), alpha.bln=alpha.bln)}) %>% unlist %>% return
+        hue.lst %>% lapply(.,function(hue.num){ColorTK::Hsl2Hex(c(hue=hue.num,saturation=saturation.num,light=lightness.num,alpha=alpha.num), alpha.bln=alpha.bln)}) %>% unlist %>% return(.)
     }else{
         return(hue.lst)
     }

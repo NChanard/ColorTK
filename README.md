@@ -1,5 +1,5 @@
-# ColorToolKit
-A Tool set to help in colors handle.
+# ColorTK
+Set of colour manipulation tools.
   
 ### Author  
 - Nicolas Chanard \<nicolas.chanard@univ-tlse3.fr>  
@@ -8,22 +8,23 @@ A Tool set to help in colors handle.
 - 0.1.0  
   
 ### Depends  
-- R (>= 4.1.2)  
+- R (>= 4.1)  
   
 ### Imports:
-- DevToolKit  
+- DevTK  
 - dplyr  
 - ggplot2  
+- grDevices  
 - magrittr  
 - stringr  
   
 ## 1. Instalation  
 ```
-devtools::install_github("Nchanard/ColorToolKit")
+devtools::install_github("Nchanard/ColorTK")
 ```
   
 ## 2. Documentation  
-https://nchanard.github.io/ColorToolKit/
+https://nchanard.github.io/ColorTK/
   
 ## 3. Standard  
 ### A. Variables  

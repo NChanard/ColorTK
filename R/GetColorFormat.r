@@ -10,10 +10,10 @@
 #' GetColorFormat("green")
 GetColorFormat <- function(color.col=NULL){
     dplyr::case_when(
-        ColorToolKit::is.col(color.col)   ~ "Col",
-        ColorToolKit::is.hsl(color.col)   ~ "Hsl",
-        ColorToolKit::is.hex(color.col)   ~ "Hex",
-        ColorToolKit::is.rgb(color.col)   ~ "Rgb",
+        ColorTK::IsCol(color.col)   ~ "Col",
+        ColorTK::IsHsl(color.col)   ~ "Hsl",
+        ColorTK::IsHex(color.col)   ~ "Hex",
+        ColorTK::IsRgb(color.col)   ~ "Rgb",
         TRUE ~ "Unknown"
-    )
+    ) %>% return(.)
 }

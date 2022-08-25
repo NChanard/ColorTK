@@ -18,7 +18,7 @@ Create a ggplot object of a colour palette
 \examples{
 pal <- Hue(paletteLength.num=1,hueRange.num=c(0,120))
 ggp <- ggPalette(pal)
-file.pth <- DevToolKit::CheckFilePath(fileName.chr="Palette",format.chr="pdf" )
+file.pth <- DevTK::CheckFilePath(fileName.chr="Palette",format.chr="pdf" )
 pdf(file=file.pth)
 print(ggp)
 dev.off()

@@ -7,5 +7,5 @@
 #' @examples
 #' Hsl2Hex(c(43.8,0.873,0.492,0.498),alpha.bln=TRUE)
 Hsl2Hex <- function(hsl.col=NULL, alpha.bln=FALSE){
-    ColorToolKit::Hsl2Rgb(hsl.col, alpha.bln) %>% ColorToolKit::Rgb2Hex(.,alpha.bln) %>% return
+    ColorTK::Hsl2Rgb(hsl.col, alpha.bln) %>% ColorTK::Rgb2Hex(.,alpha.bln) %>% return(.)
 }

@@ -6,7 +6,7 @@
 #' @examples
 #' pal <- Hue(paletteLength.num=1,hueRange.num=c(0,120))
 #' ggp <- ggPalette(pal)
-#' file.pth <- DevToolKit::CheckFilePath(fileName.chr="Palette",format.chr="pdf" )
+#' file.pth <- DevTK::CheckFilePath(fileName.chr="Palette",format.chr="pdf" )
 #' pdf(file=file.pth)
 #' print(ggp)
 #' dev.off()
@@ -20,5 +20,5 @@ ggPalette <- function(pal){
         ggplot2::theme(legend.position="none") +
         ggplot2::scale_x_continuous(breaks=seq_along(pal),labels=as.factor(seq_along(pal))) +
         ggplot2::geom_rect(ggplot2::aes(xmin=0.5,xmax=length(pal)+0.5,ymin=0.5,ymax=1.5),colour="black",fill=NA,size=0.5) %>%
-    return    
+    return(.)
 }

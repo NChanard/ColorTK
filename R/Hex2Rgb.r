@@ -7,6 +7,6 @@
 #' @examples
 #' Hex2Rgb("#ebb0107f",alpha.bln=TRUE)
 Hex2Rgb <- function(hex.col=NULL, alpha.bln=FALSE){
-        return(col2rgb(hex.col,alpha.bln)[,1])
+        grDevices::col2rgb(hex.col,alpha.bln)[,1] %>% return(.)
 }
         

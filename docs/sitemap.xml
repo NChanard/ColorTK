@@ -4,6 +4,12 @@
     <loc>/404.html</loc>
   </url>
   <url>
+    <loc>/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>/LICENSE.html</loc>
+  </url>
+  <url>
     <loc>/authors.html</loc>
   </url>
   <url>
@@ -47,6 +53,18 @@
   </url>
   <url>
     <loc>/reference/Hue.html</loc>
+  </url>
+  <url>
+    <loc>/reference/IsCol.html</loc>
+  </url>
+  <url>
+    <loc>/reference/IsHex.html</loc>
+  </url>
+  <url>
+    <loc>/reference/IsHsl.html</loc>
+  </url>
+  <url>
+    <loc>/reference/IsRgb.html</loc>
   </url>
   <url>
     <loc>/reference/MutateColorParameter.html</loc>
