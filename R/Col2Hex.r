@@ -7,5 +7,5 @@
 #' @examples
 #' Col2Hex(c(43.8,0.873,0.492,0.498),alpha.bln=TRUE)
 Col2Hex <- function(color.col=NULL, alpha.bln=FALSE){
-    col2rgb(color.col, alpha.bln) %>% apply(.,2,function(rgb.col){Rgb2Hex(rgb.col=rgb.col,alpha.bln=alpha.bln)}) %>% return
+    col2rgb(color.col, alpha.bln) %>% apply(.,2,function(rgb.col){ColorToolKit::Rgb2Hex(rgb.col=rgb.col,alpha.bln=alpha.bln)}) %>% return
 }

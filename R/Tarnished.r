@@ -7,6 +7,6 @@
 #' @examples
 #' Tarnished("#ebb0107f",alpha.bln=TRUE)
 Tarnished <- function(color.col=NULL, alpha.bln=FALSE){
-    MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="saturation", alpha.bln=alpha.bln, prctMutation.num = 0.25) %>% return
+    ColorToolKit::MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="saturation", alpha.bln=alpha.bln, prctMutation.num = 0.25) %>% return
 }
         

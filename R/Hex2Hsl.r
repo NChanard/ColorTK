@@ -7,5 +7,5 @@
 #' @examples
 #' Hex2Hsl("#ebb0107f",alpha.bln=TRUE)
 Hex2Hsl <- function(hex.col=NULL, alpha.bln=FALSE){
-    col2rgb(hex.col,  alpha.bln) %>% Rgb2Hsl(., alpha.bln) %>% return
+    col2rgb(hex.col,  alpha.bln) %>% ColorToolKit::Rgb2Hsl(., alpha.bln) %>% return
 }

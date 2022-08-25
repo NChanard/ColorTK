@@ -7,6 +7,6 @@
 #' @examples
 #' Brighten("#ebb0107f",alpha.bln=TRUE)
 Brighten <- function(color.col=NULL, alpha.bln=FALSE){
-    MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.5) %>%
-    MutateColorParameter(color.col=., operation.str="=", parameter.str="saturation", alpha.bln=alpha.bln, prctMutation.num = 1) %>% return
+    ColorToolKit::MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.5) %>%
+    ColorToolKit::MutateColorParameter(color.col=., operation.str="=", parameter.str="saturation", alpha.bln=alpha.bln, prctMutation.num = 1) %>% return
 }

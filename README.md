@@ -8,12 +8,13 @@ A Tool set to help in colors handle.
 - 0.1.0  
   
 ### Depends  
-- R (>= 4.1.2),
-- DevToolKit,
-- ggplot2  
+- R (>= 4.1.2)  
   
 ### Imports:
-- dplyr,
+- DevToolKit  
+- dplyr  
+- ggplot2  
+- magrittr  
 - stringr  
   
 ## 1. Instalation  

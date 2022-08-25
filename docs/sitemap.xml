@@ -67,6 +67,12 @@
     <loc>/reference/Tarnished.html</loc>
   </url>
   <url>
+    <loc>/reference/compound.html</loc>
+  </url>
+  <url>
+    <loc>/reference/ggPalette.html</loc>
+  </url>
+  <url>
     <loc>/reference/index.html</loc>
   </url>
   <url>
@@ -80,5 +86,8 @@
   </url>
   <url>
     <loc>/reference/is.rgb.html</loc>
+  </url>
+  <url>
+    <loc>/reference/pipe.html</loc>
   </url>
 </urlset>

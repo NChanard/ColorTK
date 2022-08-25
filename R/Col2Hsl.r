@@ -7,5 +7,5 @@
 #' @examples
 #' Col2Hsl("#ebb0107f",alpha.bln=TRUE)
 Col2Hsl <- function(color.col=NULL, alpha.bln=FALSE){
-    col2rgb(color.col, alpha.bln) %>% apply(.,2,function(rgb.col){Rgb2Hsl(rgb.col=rgb.col,alpha.bln=alpha.bln)}) %>% return
+    col2rgb(color.col, alpha.bln) %>% apply(.,2,function(rgb.col){ColorToolKit::Rgb2Hsl(rgb.col=rgb.col,alpha.bln=alpha.bln)}) %>% return
 }
