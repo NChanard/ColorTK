@@ -19,6 +19,6 @@ Create a ggplot object of a color palette.
 ggPalette
 }
 \examples{
-pal <- Hue(paletteLength.num=1,hueRange.num=c(0,120))
+pal <- Hue(paletteLength.num=5)
 ggPalette(pal)
 }

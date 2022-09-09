@@ -5,7 +5,7 @@
 #' @param pal <character or numeric>: color palette in Hexadecimal, R color or RGB format.
 #' @return  a ggplot object.
 #' @examples
-#' pal <- Hue(paletteLength.num=1,hueRange.num=c(0,120))
+#' pal <- Hue(paletteLength.num=5)
 #' ggPalette(pal)
 ggPalette <- function(pal){
     data.frame(y=1,x=seq_along(pal)) %>%
