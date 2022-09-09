@@ -2,24 +2,23 @@
 % Please edit documentation in R/ggPalette.r
 \name{ggPalette}
 \alias{ggPalette}
-\title{ggPalette}
+\title{Plot a color palette.}
 \usage{
 ggPalette(pal)
 }
 \arguments{
-\item{pal}{<character or numeric>: color palette in Hexadecimal, R colour or RGB format}
+\item{pal}{<character or numeric>: color palette in Hexadecimal, R color or RGB format.}
 }
 \value{
-a ggplot object
+a ggplot object.
 }
 \description{
-Create a ggplot object of a colour palette
+Create a ggplot object of a color palette.
+}
+\details{
+ggPalette
 }
 \examples{
 pal <- Hue(paletteLength.num=1,hueRange.num=c(0,120))
-ggp <- ggPalette(pal)
-file.pth <- DevTK::CheckFilePath(fileName.chr="Palette",format.chr="pdf" )
-pdf(file=file.pth)
-print(ggp)
-dev.off()
+ggPalette(pal)
 }

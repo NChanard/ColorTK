@@ -1,8 +1,9 @@
-#' IsHex
+#' Check if a color is in hexadecimal color format.
 #'
-#' Check if a color is in hexadecimal colour format
-#' @param color.col <character or numeric>: a color
-#' @return  Logical
+#' IsHex
+#' @description Check if a color is in hexadecimal color format.
+#' @param color.col <character or numeric>: a color.
+#' @return  a logical.
 #' @examples
 #' IsHex("red")
 #' IsHex("#FFFFFF")

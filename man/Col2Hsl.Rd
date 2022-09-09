@@ -2,20 +2,23 @@
 % Please edit documentation in R/Col2Hsl.r
 \name{Col2Hsl}
 \alias{Col2Hsl}
-\title{Col2Hsl}
+\title{Convert a color in HSL format.}
 \usage{
 Col2Hsl(color.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{color.col}{<charcater>: a vector of the color's present in base R colors()}
+\item{color.col}{<charcater>: a vector of the color's present in base R colors().}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-A vector of the color's hsl code
+A vector of the color's hsl code.
 }
 \description{
-Convert a color in hsl (Hue,Saturation,Light) format
+Convert a color in HSL (Hue,Saturation,Light) format.
+}
+\details{
+Col2Hsl
 }
 \examples{
 Col2Hsl("#ebb0107f",alpha.bln=TRUE)

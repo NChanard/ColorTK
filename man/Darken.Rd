@@ -2,20 +2,23 @@
 % Please edit documentation in R/Darken.r
 \name{Darken}
 \alias{Darken}
-\title{Darken}
+\title{Fixe light at 25\%.}
 \usage{
 Darken(color.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
 \item{color.col}{<character or numeric>: color in any format}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-An integer vector of the color's rgb code
+An integer vector of the color's rgb code.
 }
 \description{
-Fixe light at 25%
+Fixe light at 25\%.
+}
+\details{
+Darken
 }
 \examples{
 Darken("#ebb0107f",alpha.bln=TRUE)

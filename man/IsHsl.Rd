@@ -2,18 +2,21 @@
 % Please edit documentation in R/IsHsl.r
 \name{IsHsl}
 \alias{IsHsl}
-\title{IsHsl}
+\title{Check if a color is in HSL color format.}
 \usage{
 IsHsl(color.col = NULL)
 }
 \arguments{
-\item{color.col}{<character or numeric>: a color}
+\item{color.col}{<character or numeric>: a color.}
 }
 \value{
-Logical
+a logical.
 }
 \description{
-Check if a color is in HSL colour format
+Check if a color is in HSL color format.
+}
+\details{
+IsHsl
 }
 \examples{
 IsHsl("red")

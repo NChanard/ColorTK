@@ -1,0 +1,44 @@
+template:
+  bootstrap: 5
+
+reference:
+- title: Color Mutation
+  contents:
+  - Brighten
+  - Colorize
+  - Darken
+  - MutateColorParameter
+  - Pastelize
+  - Tarnished
+
+- title: Format Convertion
+  contents:
+  - Col2Hex
+  - Col2Hsl
+  - Col2Rgb
+  - ConvertColorFormat
+  - GetColorFormat
+  - Hex2Hsl
+  - Hex2Rgb
+  - Hsl2Hex
+  - Hsl2Rgb
+  - Rgb2Hex
+  - Rgb2Hsl
+
+- title: Format Check
+  contents:
+  - IsCol
+  - IsHex
+  - IsHsl
+  - IsRgb
+
+- title: Palette
+  - ggPalette
+  - Hue
+
+articles:
+- title: Other
+  navbar: ~
+  contents:
+  - Standard
+

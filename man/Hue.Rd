@@ -2,7 +2,7 @@
 % Please edit documentation in R/Hue.r
 \name{Hue}
 \alias{Hue}
-\title{Hue}
+\title{Create an Hue palette.}
 \usage{
 Hue(
   paletteLength.num = 9,
@@ -15,25 +15,28 @@ Hue(
 )
 }
 \arguments{
-\item{paletteLength.num}{<numeric>: color number}
+\item{paletteLength.num}{<numeric>: color number.}
 
-\item{rotation.num}{<numeric>: if the number is positive, rotates clockwise in the colour space, reversing if the number is negative. If is NULL compute rotation according to hueRange.num parameter. (Default NULL)}
+\item{rotation.num}{<numeric>: if positive, rotates clockwise in the color space, reversing if the number is negative. If is NULL compute rotation according to hueRange.num parameter. (Default NULL)}
 
-\item{hueRange.num}{<numeric>: Degree range in colour space between 0 and 360 (Default c(0,360))}
+\item{hueRange.num}{<numeric>: Degree range in color space between 0 and 360. (Default c(0,360))}
 
-\item{saturation.num}{<numeric>: Saturation value between 0 and 1 (Default 0.65)}
+\item{saturation.num}{<numeric>: Saturation value between 0 and 1. (Default 0.65)}
 
-\item{lightness.num}{<numeric>: Lightness value between 0 and 1 (Default 0.65)}
+\item{lightness.num}{<numeric>: Lightness value between 0 and 1. (Default 0.65)}
 
-\item{alpha.num}{<numeric>: Opacity value between 0 and 1 (Default 1)}
+\item{alpha.num}{<numeric>: Opacity value between 0 and 1. (Default 1)}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-A vector of colour
+A vector of color.
 }
 \description{
 Create an Hue palette.
+}
+\details{
+Hue
 }
 \examples{
 Hue(paletteLength.num=1,hueRange.num=c(0,120))

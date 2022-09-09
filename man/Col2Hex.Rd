@@ -2,20 +2,23 @@
 % Please edit documentation in R/Col2Hex.r
 \name{Col2Hex}
 \alias{Col2Hex}
-\title{Col2Hex}
+\title{Convert a color in hexadecimal format.}
 \usage{
 Col2Hex(color.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{color.col}{<charcater>: a vector of the color's present in base R colors()}
+\item{color.col}{<charcater>: a vector of the color's present in base R colors().}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-A character of the color's hexadecimal code
+A character of the color's hexadecimal code.
 }
 \description{
-Convert a color in hexadecimal format
+Convert a color in hexadecimal format.
+}
+\details{
+Col2Hex
 }
 \examples{
 Col2Hex(c(43.8,0.873,0.492,0.498),alpha.bln=TRUE)

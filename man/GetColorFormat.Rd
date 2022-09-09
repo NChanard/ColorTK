@@ -2,18 +2,21 @@
 % Please edit documentation in R/GetColorFormat.r
 \name{GetColorFormat}
 \alias{GetColorFormat}
-\title{GetColorFormat}
+\title{Get format of a color}
 \usage{
 GetColorFormat(color.col = NULL)
 }
 \arguments{
-\item{color.col}{<charcater or numerical>: a color in any format}
+\item{color.col}{<charcater or numerical>: a color in any format.}
 }
 \value{
-A character of color format
+A character of color format.
 }
 \description{
-Return the format of a color
+Return the format of a color.
+}
+\details{
+GetColorFormat
 }
 \examples{
 GetColorFormat("#ebb0107f")

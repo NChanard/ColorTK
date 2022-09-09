@@ -2,18 +2,21 @@
 % Please edit documentation in R/IsRgb.r
 \name{IsRgb}
 \alias{IsRgb}
-\title{IsRgb}
+\title{Check if a color is in RGB color format.}
 \usage{
 IsRgb(color.col = NULL)
 }
 \arguments{
-\item{color.col}{<character or numeric>: a color}
+\item{color.col}{<character or numeric>: a color.}
 }
 \value{
-Logical
+a logical.
 }
 \description{
-Check if a color is in RGB colour format
+Check if a color is in RGB color format.
+}
+\details{
+IsRgb
 }
 \examples{
 IsRgb("red")

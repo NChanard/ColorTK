@@ -2,20 +2,23 @@
 % Please edit documentation in R/Hex2Rgb.r
 \name{Hex2Rgb}
 \alias{Hex2Rgb}
-\title{Hex2Rgb}
+\title{Convert a color in hexadecimal to RGB.}
 \usage{
 Hex2Rgb(hex.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{hex.col}{<charcater>: a character of the color's hexadecimal code}
+\item{hex.col}{<charcater>: a character of the color's hexadecimal code.}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-An integer vector of the color's RGB code
+An integer vector of the color's RGB code.
 }
 \description{
-Convert a color in hexadecimal format to RGB format
+Convert a color in hexadecimal format to RGB format.
+}
+\details{
+Hex2Rgb
 }
 \examples{
 Hex2Rgb("#ebb0107f",alpha.bln=TRUE)

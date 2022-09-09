@@ -1,8 +1,9 @@
-#' GetColorFormat
+#' Get format of a color
 #'
-#' Return the format of a color
-#' @param color.col <charcater or numerical>: a color in any format
-#' @return A character of color format
+#' GetColorFormat
+#' @description Return the format of a color.
+#' @param color.col <charcater or numerical>: a color in any format.
+#' @return A character of color format.
 #' @examples
 #' GetColorFormat("#ebb0107f")
 #' GetColorFormat(c(235,176,16,127))
@@ -15,5 +16,5 @@ GetColorFormat <- function(color.col=NULL){
         ColorTK::IsHex(color.col)   ~ "Hex",
         ColorTK::IsRgb(color.col)   ~ "Rgb",
         TRUE ~ "Unknown"
-    ) %>% return(.)
+    ) %>% return(.data)
 }

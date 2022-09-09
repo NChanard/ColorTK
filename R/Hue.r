@@ -1,14 +1,15 @@
-#' Hue
-#'
 #' Create an Hue palette.
-#' @param paletteLength.num <numeric>: color number
-#' @param rotation.num <numeric>: if the number is positive, rotates clockwise in the colour space, reversing if the number is negative. If is NULL compute rotation according to hueRange.num parameter. (Default NULL)
-#' @param hueRange.num <numeric>: Degree range in colour space between 0 and 360 (Default c(0,360))
-#' @param saturation.num <numeric>: Saturation value between 0 and 1 (Default 0.65)
-#' @param lightness.num <numeric>: Lightness value between 0 and 1 (Default 0.65)
-#' @param alpha.num <numeric>: Opacity value between 0 and 1 (Default 1)
-#' @param alpha.bln <logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)
-#' @return  A vector of colour
+#'
+#' Hue
+#' @description Create an Hue palette.
+#' @param paletteLength.num <numeric>: color number.
+#' @param rotation.num <numeric>: if positive, rotates clockwise in the color space, reversing if the number is negative. If is NULL compute rotation according to hueRange.num parameter. (Default NULL)
+#' @param hueRange.num <numeric>: Degree range in color space between 0 and 360. (Default c(0,360))
+#' @param saturation.num <numeric>: Saturation value between 0 and 1. (Default 0.65)
+#' @param lightness.num <numeric>: Lightness value between 0 and 1. (Default 0.65)
+#' @param alpha.num <numeric>: Opacity value between 0 and 1. (Default 1)
+#' @param alpha.bln <logical>: whether the alpha layer should be returned. (Default FALSE)
+#' @return  A vector of color.
 #' @examples
 #' Hue(paletteLength.num=1,hueRange.num=c(0,120))
 Hue <- function(paletteLength.num=9, rotation.num=NULL, hueRange.num=c(0,360), saturation.num=0.65, lightness.num=0.65, alpha.num=1, alpha.bln=FALSE){
@@ -36,7 +37,7 @@ Hue <- function(paletteLength.num=9, rotation.num=NULL, hueRange.num=c(0,360), s
         hue.lst <- ColorTK::Hue(paletteLength.num=3, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[2]
     }
     if(is.numeric(hue.lst)){
-        hue.lst %>% lapply(.,function(hue.num){ColorTK::Hsl2Hex(c(hue=hue.num,saturation=saturation.num,light=lightness.num,alpha=alpha.num), alpha.bln=alpha.bln)}) %>% unlist %>% return(.)
+        lapply(hue.lst,function(hue.num){ColorTK::Hsl2Hex(c(hue=hue.num,saturation=saturation.num,light=lightness.num,alpha=alpha.num), alpha.bln=alpha.bln)}) %>% unlist %>% return(.data)
     }else{
         return(hue.lst)
     }

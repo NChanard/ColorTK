@@ -2,20 +2,23 @@
 % Please edit documentation in R/Hex2Hsl.r
 \name{Hex2Hsl}
 \alias{Hex2Hsl}
-\title{Hex2Hsl}
+\title{Convert a color in hexadecimal to HSL.}
 \usage{
 Hex2Hsl(hex.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{hex.col}{<charcater>: a character of the color's hexadecimal code}
+\item{hex.col}{<charcater>: a character of the color's hexadecimal code.}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-A vector of the color's hsl code
+A vector of the color's HSL code.
 }
 \description{
-Convert a color in hexadecimal format to hsl (Hue,Saturation,Light) format
+Convert a color in hexadecimal to HSl (Hue,Saturation,Light) format.
+}
+\details{
+Hex2Hsl
 }
 \examples{
 Hex2Hsl("#ebb0107f",alpha.bln=TRUE)

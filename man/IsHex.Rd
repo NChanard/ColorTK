@@ -2,18 +2,21 @@
 % Please edit documentation in R/IsHex.r
 \name{IsHex}
 \alias{IsHex}
-\title{IsHex}
+\title{Check if a color is in hexadecimal color format.}
 \usage{
 IsHex(color.col = NULL)
 }
 \arguments{
-\item{color.col}{<character or numeric>: a color}
+\item{color.col}{<character or numeric>: a color.}
 }
 \value{
-Logical
+a logical.
 }
 \description{
-Check if a color is in hexadecimal colour format
+Check if a color is in hexadecimal color format.
+}
+\details{
+IsHex
 }
 \examples{
 IsHex("red")

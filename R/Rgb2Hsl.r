@@ -1,16 +1,17 @@
+#' Convert a color in RGB to HSL format.
+#' 
 #' Rgb2Hsl
-#'
-#' Convert a color in RGB format to hsl (Hue,Saturation,Light) format
-#' @param rgb.col <integer>: an integer of the color's RGB code
-#' @param alpha.bln <logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)
-#' @return A vector of the color's hsl code
+#' @description Convert a color in RGB format to HSL (Hue,Saturation,Light) format.
+#' @param rgb.col <integer>: an integer of the color's RGB code.
+#' @param alpha.bln <logical>: whether the alpha layer should be returned. (Default FALSE)
+#' @return A vector of the color's HSL code.
 #' @examples
 #' Rgb2Hsl(c(235,176,16,127),alpha.bln=TRUE)
 Rgb2Hsl <- function(rgb.col=NULL, alpha.bln=FALSE){
     if(3>length(rgb.col) | length(rgb.col)>4){
         cat("Error, need 3 or 4 values beetween 0 and 255, first value for red, second for green, third for blue and last for alpha")
     }else{
-        if(lapply(rgb.col, function(value.num){0<=value.num & value.num<=255}) %>% unlist %>% sort %>% .[[1]]){
+        if(lapply(rgb.col, function(value.num){0<=value.num & value.num<=255}) %>% unlist %>% sort %>% magrittr::extract2(1)){
             if(length(rgb.col) == 3){
                 alpha.num <- 1.00
             }else{

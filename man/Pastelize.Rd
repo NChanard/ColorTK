@@ -2,20 +2,23 @@
 % Please edit documentation in R/Pastelize.r
 \name{Pastelize}
 \alias{Pastelize}
-\title{Pastelize}
+\title{Fixe light at 75\%.}
 \usage{
 Pastelize(color.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{color.col}{<character or numeric>: color in any format}
+\item{color.col}{<character or numeric>: color in any format.}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-An integer vector of the color's rgb code
+An integer vector of the color's rgb code.
 }
 \description{
-Fixe light at 75%
+Fixe light at 75\%.
+}
+\details{
+Pastelize
 }
 \examples{
 Pastelize("#ebb0107f",alpha.bln=TRUE)

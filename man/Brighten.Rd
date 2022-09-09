@@ -2,20 +2,23 @@
 % Please edit documentation in R/Brighten.r
 \name{Brighten}
 \alias{Brighten}
-\title{Brighten}
+\title{Fixe saturation at 100\% and light at 50\%.}
 \usage{
 Brighten(color.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{color.col}{<character or numeric>: color in any format}
+\item{color.col}{<character or numeric>: color in any format.}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-An integer vector of the color's rgb code
+An integer vector of the color's rgb code.
 }
 \description{
-Fixe saturation at 100% and light at 50%
+Fixe saturation at 100\% and light at 50\%.
+}
+\details{
+Brighten
 }
 \examples{
 Brighten("#ebb0107f",alpha.bln=TRUE)

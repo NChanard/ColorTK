@@ -2,18 +2,21 @@
 % Please edit documentation in R/IsCol.r
 \name{IsCol}
 \alias{IsCol}
-\title{IsCol}
+\title{Check if a color is in R color format.}
 \usage{
 IsCol(color.col = NULL)
 }
 \arguments{
-\item{color.col}{<character or numeric>: a color}
+\item{color.col}{<character or numeric>: color in any format.}
 }
 \value{
-Logical
+a logical.
 }
 \description{
-Check if a color is in R colour format
+Check if a color is in R color format.
+}
+\details{
+IsCol
 }
 \examples{
 IsCol("red")

@@ -1,8 +1,9 @@
+#' Check if a color is in R color format.
+#' 
 #' IsCol
-#'
-#' Check if a color is in R colour format
-#' @param color.col <character or numeric>: a color
-#' @return  Logical
+#' @description Check if a color is in R color format.
+#' @param color.col <character or numeric>: color in any format.
+#' @return  a logical.
 #' @examples
 #' IsCol("red")
 #' IsCol("#FFFFFF")

@@ -2,20 +2,23 @@
 % Please edit documentation in R/Tarnished.r
 \name{Tarnished}
 \alias{Tarnished}
-\title{Tarnished}
+\title{Fixe saturation at 25\%.}
 \usage{
 Tarnished(color.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{color.col}{<character or numeric>: color in any format}
+\item{color.col}{<character or numeric>: color in any format.}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-An integer vector of the color's rgb code
+An integer vector of the color's rgb code.
 }
 \description{
-Fixe saturation at 25%
+Fixe saturation at 25\%.
+}
+\details{
+Tarnished
 }
 \examples{
 Tarnished("#ebb0107f",alpha.bln=TRUE)

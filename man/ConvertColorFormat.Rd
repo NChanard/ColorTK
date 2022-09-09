@@ -2,22 +2,25 @@
 % Please edit documentation in R/ConvertColorFormat.r
 \name{ConvertColorFormat}
 \alias{ConvertColorFormat}
-\title{ConvertColorFormat}
+\title{Convert a color format.}
 \usage{
 ConvertColorFormat(color.col = NULL, alpha.bln = FALSE, format.str = "Hex")
 }
 \arguments{
-\item{color.col}{<charcater>: a color in any format}
+\item{color.col}{<charcater>: a color in any format.}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 
-\item{format.str}{<character>: a character that indicates the format you want. must one of "Hex", "Hsl", "Rgb" (case insensitive). (Default "Hex")}
+\item{format.str}{<character>: a character (case insensitive) that give the format you want ("Hex", "Hsl", "Rgb"). (Default "Hex")}
 }
 \value{
-An integer vector of the color's rgb code
+An integer vector of the color's rgb code.
 }
 \description{
-Convert a color in a desired format
+Convert a color in a desired format.
+}
+\details{
+ConvertColorFormat
 }
 \examples{
 ConvertColorFormat("#ebb0107f", alpha.bln=TRUE, format.str="Rgb")

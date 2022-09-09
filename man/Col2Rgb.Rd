@@ -2,20 +2,23 @@
 % Please edit documentation in R/Col2Rgb.r
 \name{Col2Rgb}
 \alias{Col2Rgb}
-\title{Col2Rgb}
+\title{Convert a color in to RGB format.}
 \usage{
 Col2Rgb(color.col = NULL, alpha.bln = FALSE)
 }
 \arguments{
-\item{color.col}{<charcater>: a vector of the color's present in base R colors()}
+\item{color.col}{<charcater>: a vector of the color's present in base R colors().}
 
-\item{alpha.bln}{<logical>: a boolean that indicate if the alpha layer must be return. (Default FALSE)}
+\item{alpha.bln}{<logical>: whether the alpha layer should be returned. (Default FALSE)}
 }
 \value{
-An integer vector of the color's RGB code
+An integer vector of the color's RGB code.
 }
 \description{
-Convert a color in to RGB format
+Convert a color in to RGB format.
+}
+\details{
+Col2Rgb
 }
 \examples{
 Col2Rgb(c("green","red"),alpha.bln=TRUE)
