@@ -33,6 +33,7 @@ reference:
   - IsRgb
 
 - title: Palette
+  contents:
   - ggPalette
   - Hue
 
