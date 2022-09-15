@@ -4,10 +4,21 @@
 \alias{rocket}
 \title{Create a rocket palette}
 \usage{
-rocket(n)
+rocket(
+  paletteLength.num = NULL,
+  space.chr = "rgb",
+  interpolate.chr = "linear",
+  bias.num = 1
+)
 }
 \arguments{
-\item{n}{<numeric>: color number.}
+\item{paletteLength.num}{<numeric>: color number.}
+
+\item{space.chr}{<numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")}
+
+\item{interpolate.chr}{<numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")}
+
+\item{bias.num}{<numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)}
 }
 \value{
 A vector of color.
@@ -20,5 +31,5 @@ rocket
 }
 \examples{
 rocket(9)
-ggPalette(rocket(9))
+ggPalette(rocket(255))
 }

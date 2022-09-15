@@ -2,310 +2,584 @@
 #'
 #' YlGnBu
 #' @description Create a YlGnBu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' YlGnBu(9)
-#' ggPalette(YlGnBu(9))
-YlGnBu   <- grDevices::colorRampPalette(c("#FFFFD9", "#EDF8B1", "#C7E9B4", "#7FCDBB", "#41B6C4", "#1D91C0", "#225EA8", "#253494", "#081D58"))
+#' ggPalette(YlGnBu(255))
+YlGnBu <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFFFD9", "#EDF8B1", "#C7E9B4", "#7FCDBB", "#41B6C4", "#1D91C0", "#225EA8", "#253494", "#081D58"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a YlOrBr palette
 #'
 #' YlOrBr
 #' @description Create a YlOrBr palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' YlOrBr(9)
-#' ggPalette(YlOrBr(9))
-YlOrBr   <- grDevices::colorRampPalette(c("#FFFFE5", "#FFF7BC", "#FEE391", "#FEC44F", "#FE9929", "#EC7014", "#CC4C02", "#993404", "#662506"))
+#' ggPalette(YlOrBr(255))
+YlOrBr <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFFFE5", "#FFF7BC", "#FEE391", "#FEC44F", "#FE9929", "#EC7014", "#CC4C02", "#993404", "#662506"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a YlOrRd palette
 #'
 #' YlOrRd
 #' @description Create a YlOrRd palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' YlOrRd(9)
-#' ggPalette(YlOrRd(9))
-YlOrRd   <- grDevices::colorRampPalette(c("#FFFFCC", "#FFEDA0", "#FED976", "#FEB24C", "#FD8D3C", "#FC4E2A", "#E31A1C", "#BD0026", "#800026"))
+#' ggPalette(YlOrRd(255))
+YlOrRd <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFFFCC", "#FFEDA0", "#FED976", "#FEB24C", "#FD8D3C", "#FC4E2A", "#E31A1C", "#BD0026", "#800026"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a PuBuGn palette
 #'
 #' PuBuGn
 #' @description Create a PuBuGn palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' PuBuGn(9)
-#' ggPalette(PuBuGn(9))
-PuBuGn   <- grDevices::colorRampPalette(c("#FFF7FB", "#ECE2F0", "#D0D1E6", "#A6BDDB", "#67A9CF", "#3690C0", "#02818A", "#016C59", "#014636"))
+#' ggPalette(PuBuGn(255))
+PuBuGn <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFF7FB", "#ECE2F0", "#D0D1E6", "#A6BDDB", "#67A9CF", "#3690C0", "#02818A", "#016C59", "#014636"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a YlGn palette
 #'
 #' YlGn
 #' @description Create a YlGn palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' YlGn(9)
-#' ggPalette(YlGn(9))
-YlGn     <- grDevices::colorRampPalette(c("#FFFFE5", "#F7FCB9", "#D9F0A3", "#ADDD8E", "#78C679", "#41AB5D", "#238443", "#006837", "#004529"))
+#' ggPalette(YlGn(255))
+YlGn <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFFFE5", "#F7FCB9", "#D9F0A3", "#ADDD8E", "#78C679", "#41AB5D", "#238443", "#006837", "#004529"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a OrRd palette
 #'
 #' OrRd
 #' @description Create a OrRd palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' OrRd(9)
-#' ggPalette(OrRd(9))
-OrRd     <- grDevices::colorRampPalette(c("#FFF7EC", "#FEE8C8", "#FDD49E", "#FDBB84", "#FC8D59", "#EF6548", "#D7301F", "#B30000", "#7F0000"))
+#' ggPalette(OrRd(255))
+OrRd <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFF7EC", "#FEE8C8", "#FDD49E", "#FDBB84", "#FC8D59", "#EF6548", "#D7301F", "#B30000", "#7F0000"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a BuGn palette
 #'
 #' BuGn
 #' @description Create a BuGn palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' BuGn(9)
-#' ggPalette(BuGn(9))
-BuGn     <- grDevices::colorRampPalette(c("#F7FCFD", "#E5F5F9", "#CCECE6", "#99D8C9", "#66C2A4", "#41AE76", "#238B45", "#006D2C", "#00441B"))
+#' ggPalette(BuGn(255))
+BuGn <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#F7FCFD", "#E5F5F9", "#CCECE6", "#99D8C9", "#66C2A4", "#41AE76", "#238B45", "#006D2C", "#00441B"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a GnBu palette
 #'
 #' GnBu
 #' @description Create a GnBu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' GnBu(9)
-#' ggPalette(GnBu(9))
-GnBu     <- grDevices::colorRampPalette(c("#F7FCF0", "#E0F3DB", "#CCEBC5", "#A8DDB5", "#7BCCC4", "#4EB3D3", "#2B8CBE", "#0868AC", "#084081"))
+#' ggPalette(GnBu(255))
+GnBu <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#F7FCF0", "#E0F3DB", "#CCEBC5", "#A8DDB5", "#7BCCC4", "#4EB3D3", "#2B8CBE", "#0868AC", "#084081"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a BuPu palette
 #'
 #' BuPu
 #' @description Create a BuPu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' BuPu(9)
-#' ggPalette(BuPu(9))
-BuPu     <- grDevices::colorRampPalette(c("#F7FCFD", "#E0ECF4", "#BFD3E6", "#9EBCDA", "#8C96C6", "#8C6BB1", "#88419D", "#810F7C", "#4D004B"))
+#' ggPalette(BuPu(255))
+BuPu <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#F7FCFD", "#E0ECF4", "#BFD3E6", "#9EBCDA", "#8C96C6", "#8C6BB1", "#88419D", "#810F7C", "#4D004B"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a PuBu palette
 #'
 #' PuBu
 #' @description Create a PuBu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' PuBu(9)
-#' ggPalette(PuBu(9))
-PuBu     <- grDevices::colorRampPalette(c("#FFF7FB", "#ECE7F2", "#D0D1E6", "#A6BDDB", "#74A9CF", "#3690C0", "#0570B0", "#045A8D", "#023858"))
+#' ggPalette(PuBu(255))
+PuBu <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFF7FB", "#ECE7F2", "#D0D1E6", "#A6BDDB", "#74A9CF", "#3690C0", "#0570B0", "#045A8D", "#023858"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a RdPu palette
 #'
 #' RdPu
 #' @description Create a RdPu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' RdPu(9)
-#' ggPalette(RdPu(9))
-RdPu     <- grDevices::colorRampPalette(c("#FFF7F3", "#FDE0DD", "#FCC5C0", "#FA9FB5", "#F768A1", "#DD3497", "#AE017E", "#7A0177", "#49006A"))
+#' ggPalette(RdPu(255))
+RdPu <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFF7F3", "#FDE0DD", "#FCC5C0", "#FA9FB5", "#F768A1", "#DD3497", "#AE017E", "#7A0177", "#49006A"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a PuRd palette
 #'
 #' PuRd
 #' @description Create a PuRd palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' PuRd(9)
-#' ggPalette(PuRd(9))
-PuRd     <- grDevices::colorRampPalette(c("#F7F4F9", "#E7E1EF", "#D4B9DA", "#C994C7", "#DF65B0", "#E7298A", "#CE1256", "#980043", "#67001F"))
+#' ggPalette(PuRd(255))
+PuRd <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#F7F4F9", "#E7E1EF", "#D4B9DA", "#C994C7", "#DF65B0", "#E7298A", "#CE1256", "#980043", "#67001F"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a Greys palette
 #'
 #' Greys
 #' @description Create a Greys palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' Greys(9)
-#' ggPalette(Greys(9))
-Greys    <- grDevices::colorRampPalette(c("#FFFFFF", "#F0F0F0", "#D9D9D9", "#BDBDBD", "#969696", "#737373", "#525252", "#252525", "#000000"))
+#' ggPalette(Greys(255))
+Greys <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFFFFF", "#F0F0F0", "#D9D9D9", "#BDBDBD", "#969696", "#737373", "#525252", "#252525", "#000000"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a Oranges palette
 #'
 #' Oranges
 #' @description Create a Oranges palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' Oranges(9)
-#' ggPalette(Oranges(9))
-Oranges  <- grDevices::colorRampPalette(c("#FFF5EB", "#FEE6CE", "#FDD0A2", "#FDAE6B", "#FD8D3C", "#F16913", "#D94801", "#A63603", "#7F2704"))
+#' ggPalette(Oranges(255))
+Oranges <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFF5EB", "#FEE6CE", "#FDD0A2", "#FDAE6B", "#FD8D3C", "#F16913", "#D94801", "#A63603", "#7F2704"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a Reds palette
 #'
 #' Reds
 #' @description Create a Reds palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' Reds(9)
-#' ggPalette(Reds(9))
-Reds     <- grDevices::colorRampPalette(c("#FFF5F0", "#FEE0D2", "#FCBBA1", "#FC9272", "#FB6A4A", "#EF3B2C", "#CB181D", "#A50F15", "#67000D"))
+#' ggPalette(Reds(255))
+Reds <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FFF5F0", "#FEE0D2", "#FCBBA1", "#FC9272", "#FB6A4A", "#EF3B2C", "#CB181D", "#A50F15", "#67000D"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a Purples palette
 #'
 #' Purples
 #' @description Create a Purples palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' Purples(9)
-#' ggPalette(Purples(9))
-Purples  <- grDevices::colorRampPalette(c("#FCFBFD", "#EFEDF5", "#DADAEB", "#BCBDDC", "#9E9AC8", "#807DBA", "#6A51A3", "#54278F", "#3F007D"))
+#' ggPalette(Purples(255))
+Purples <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#FCFBFD", "#EFEDF5", "#DADAEB", "#BCBDDC", "#9E9AC8", "#807DBA", "#6A51A3", "#54278F", "#3F007D"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a Blues palette
 #'
 #' Blues
 #' @description Create a Blues palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' Blues(9)
-#' ggPalette(Blues(9))
-Blues    <- grDevices::colorRampPalette(c("#F7FBFF", "#DEEBF7", "#C6DBEF", "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"))
+#' ggPalette(Blues(255))
+Blues <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#F7FBFF", "#DEEBF7", "#C6DBEF", "#9ECAE1", "#6BAED6", "#4292C6", "#2171B5", "#08519C", "#08306B"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a Greens palette
 #'
 #' Greens
 #' @description Create a Greens palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' Greens(9)
-#' ggPalette(Greens(9))
-Greens   <- grDevices::colorRampPalette(c("#F7FCF5", "#E5F5E0", "#C7E9C0", "#A1D99B", "#74C476", "#41AB5D", "#238B45", "#006D2C", "#00441B"))
+#' ggPalette(Greens(255))
+Greens <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#F7FCF5", "#E5F5E0", "#C7E9C0", "#A1D99B", "#74C476", "#41AB5D", "#238B45", "#006D2C", "#00441B"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a RdBu palette
 #'
 #' RdBu
 #' @description Create a RdBu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' RdBu(9)
-#' ggPalette(RdBu(9))
-RdBu     <- grDevices::colorRampPalette(c("#67001F", "#B2182B", "#D6604D", "#F4A582", "#FDDBC7", "#F7F7F7", "#D1E5F0", "#92C5DE", "#4393C3", "#2166AC", "#053061"))
+#' ggPalette(RdBu(255))
+RdBu <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#67001F", "#B2182B", "#D6604D", "#F4A582", "#FDDBC7", "#F7F7F7", "#D1E5F0", "#92C5DE", "#4393C3", "#2166AC", "#053061"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a RdBu palette
 #'
 #' RdBu
 #' @description Create a RdBu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' RdBu(9)
-#' ggPalette(RdBu(9))
-RdGy     <- grDevices::colorRampPalette(c("#67001F", "#B2182B", "#D6604D", "#F4A582", "#FDDBC7", "#FFFFFF", "#E0E0E0", "#BABABA", "#878787", "#4D4D4D", "#1A1A1A"))
+#' ggPalette(RdBu(255))
+RdGy <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#67001F", "#B2182B", "#D6604D", "#F4A582", "#FDDBC7", "#FFFFFF", "#E0E0E0", "#BABABA", "#878787", "#4D4D4D", "#1A1A1A"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a RdYlBu palette
 #'
 #' RdYlBu
 #' @description Create a RdYlBu palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' RdYlBu(9)
-#' ggPalette(RdYlBu(9))
-RdYlBu   <- grDevices::colorRampPalette(c("#A50026", "#D73027", "#F46D43", "#FDAE61", "#FEE090", "#FFFFBF", "#E0F3F8", "#ABD9E9", "#74ADD1", "#4575B4", "#313695"))
+#' ggPalette(RdYlBu(255))
+RdYlBu <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#A50026", "#D73027", "#F46D43", "#FDAE61", "#FEE090", "#FFFFBF", "#E0F3F8", "#ABD9E9", "#74ADD1", "#4575B4", "#313695"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a RdYlGn palette
 #'
 #' RdYlGn
 #' @description Create a RdYlGn palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' RdYlGn(9)
-#' ggPalette(RdYlGn(9))
-RdYlGn   <- grDevices::colorRampPalette(c("#A50026", "#D73027", "#F46D43", "#FDAE61", "#FEE08B", "#FFFFBF", "#D9EF8B", "#A6D96A", "#66BD63", "#1A9850", "#006837"))
+#' ggPalette(RdYlGn(255))
+RdYlGn <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#A50026", "#D73027", "#F46D43", "#FDAE61", "#FEE08B", "#FFFFBF", "#D9EF8B", "#A6D96A", "#66BD63", "#1A9850", "#006837"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a PuOr palette
 #'
 #' PuOr
 #' @description Create a PuOr palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' PuOr(9)
-#' ggPalette(PuOr(9))
-PuOr     <- grDevices::colorRampPalette(c("#7F3B08", "#B35806", "#E08214", "#FDB863", "#FEE0B6", "#F7F7F7", "#D8DAEB", "#B2ABD2", "#8073AC", "#542788", "#2D004B"))
+#' ggPalette(PuOr(255))
+PuOr <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#7F3B08", "#B35806", "#E08214", "#FDB863", "#FEE0B6", "#F7F7F7", "#D8DAEB", "#B2ABD2", "#8073AC", "#542788", "#2D004B"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a PiYg palette
 #'
 #' PiYg
 #' @description Create a PiYg palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' PiYg(9)
-#' ggPalette(PiYg(9))
-PiYg     <- grDevices::colorRampPalette(c("#8E0152", "#C51B7D", "#DE77AE", "#F1B6DA", "#FDE0EF", "#F7F7F7", "#E6F5D0", "#B8E186", "#7FBC41", "#4D9221", "#276419"))
+#' ggPalette(PiYg(255))
+PiYg <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#8E0152", "#C51B7D", "#DE77AE", "#F1B6DA", "#FDE0EF", "#F7F7F7", "#E6F5D0", "#B8E186", "#7FBC41", "#4D9221", "#276419"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a PrGn palette
 #'
 #' PrGn
 #' @description Create a PrGn palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' PrGn(9)
-#' ggPalette(PrGn(9))
-PrGn     <- grDevices::colorRampPalette(c("#40004B", "#762A83", "#9970AB", "#C2A5CF", "#E7D4E8", "#F7F7F7", "#D9F0D3", "#A6DBA0", "#5AAE61", "#1B7837", "#00441B"))
+#' ggPalette(PrGn(255))
+PrGn <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#40004B", "#762A83", "#9970AB", "#C2A5CF", "#E7D4E8", "#F7F7F7", "#D9F0D3", "#A6DBA0", "#5AAE61", "#1B7837", "#00441B"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a BrBG palette
 #'
 #' BrBG
 #' @description Create a BrBG palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' BrBG(9)
-#' ggPalette(BrBG(9))
-BrBG     <- grDevices::colorRampPalette(c("#543005", "#8C510A", "#BF812D", "#DFC27D", "#F6E8C3", "#F5F5F5", "#C7EAE5", "#80CDC1", "#35978F", "#01665E", "#003C30"))
+#' ggPalette(BrBG(255))
+BrBG <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#543005", "#8C510A", "#BF812D", "#DFC27D", "#F6E8C3", "#F5F5F5", "#C7EAE5", "#80CDC1", "#35978F", "#01665E", "#003C30"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a Spectral palette
 #'
 #' Spectral
 #' @description Create a Spectral palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' Spectral(9)
-#' ggPalette(Spectral(9))
-Spectral <- grDevices::colorRampPalette(c("#9E0142", "#D53E4F", "#F46D43", "#FDAE61", "#FEE08B", "#FFFFBF", "#E6F598", "#ABDDA4", "#66C2A5", "#3288BD", "#5E4FA2"))
+#' ggPalette(Spectral(255))
+Spectral <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#9E0142", "#D53E4F", "#F46D43", "#FDAE61", "#FEE08B", "#FFFFBF", "#E6F598", "#ABDDA4", "#66C2A5", "#3288BD", "#5E4FA2"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a magma palette
 #'
 #' magma
 #' @description Create a magma palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' magma(9)
-#' ggPalette(magma(9))
-magma <- grDevices::colorRampPalette(
-    c("#000004", "#010005", "#010106", "#010108", "#020109", "#02020B", "#02020D",
+#' ggPalette(magma(255))
+magma <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#000004", "#010005", "#010106", "#010108", "#020109", "#02020B", "#02020D",
       "#03030F", "#030312", "#040414", "#050416", "#060518", "#06051A", "#07061C",
       "#08071E", "#090720", "#0A0822", "#0B0924", "#0C0926", "#0D0A29", "#0E0B2B",
       "#100B2D", "#110C2F", "#120D31", "#130D34", "#140E36", "#150E38", "#160F3B",
@@ -341,22 +615,29 @@ magma <- grDevices::colorRampPalette(
       "#FED194", "#FED395", "#FED597", "#FED799", "#FED89A", "#FDDA9C", "#FDDC9E",
       "#FDDEA0", "#FDE0A1", "#FDE2A3", "#FDE3A5", "#FDE5A7", "#FDE7A9", "#FDE9AA",
       "#FDEBAC", "#FCECAE", "#FCEEB0", "#FCF0B2", "#FCF2B4", "#FCF4B6", "#FCF6B8",
-      "#FCF7B9", "#FCF9BB", "#FCFBBD", "#FCFDBF"
-    )
-)
+      "#FCF7B9", "#FCF9BB", "#FCFBBD", "#FCFDBF"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 
 #' Create a inferno palette
 #'
 #' inferno
 #' @description Create a inferno palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' inferno(9)
-#' ggPalette(inferno(9))
-inferno <- grDevices::colorRampPalette(
-    c("#000004", "#010005", "#010106", "#010108", "#02010A", "#02020C", "#02020E",
+#' ggPalette(inferno(255))
+inferno <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#000004", "#010005", "#010106", "#010108", "#02010A", "#02020C", "#02020E",
       "#030210", "#040312", "#040314", "#050417", "#060419", "#07051B", "#08051D",
       "#09061F", "#0A0722", "#0B0724", "#0C0826", "#0D0829", "#0E092B", "#10092D",
       "#110A30", "#120A32", "#140B34", "#150B37", "#160B39", "#180C3C", "#190C3E",
@@ -392,21 +673,28 @@ inferno <- grDevices::colorRampPalette(
       "#F5D949", "#F5DB4C", "#F4DD4F", "#F4DF53", "#F4E156", "#F3E35A", "#F3E55D",
       "#F2E661", "#F2E865", "#F2EA69", "#F1EC6D", "#F1ED71", "#F1EF75", "#F1F179",
       "#F2F27D", "#F2F482", "#F3F586", "#F3F68A", "#F4F88E", "#F5F992", "#F6FA96",
-      "#F8FB9A", "#F9FC9D", "#FAFDA1", "#FCFFA4"
-    )
-)
+      "#F8FB9A", "#F9FC9D", "#FAFDA1", "#FCFFA4"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a plasma palette
 #'
 #' plasma
 #' @description Create a plasma palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' plasma(9)
-#' ggPalette(plasma(9))
-plasma <- grDevices::colorRampPalette(
-    c("#0D0887", "#100788", "#130789", "#16078A", "#19068C", "#1B068D", "#1D068E",
+#' ggPalette(plasma(255))
+plasma <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#0D0887", "#100788", "#130789", "#16078A", "#19068C", "#1B068D", "#1D068E",
       "#20068F", "#220690", "#240691", "#260591", "#280592", "#2A0593", "#2C0594",
       "#2E0595", "#2F0596", "#310597", "#330597", "#350498", "#370499", "#38049A",
       "#3A049A", "#3C049B", "#3E049C", "#3F049C", "#41049D", "#43039E", "#44039E",
@@ -442,21 +730,28 @@ plasma <- grDevices::colorRampPalette(
       "#FCD025", "#FCD225", "#FBD324", "#FBD524", "#FBD724", "#FAD824", "#FADA24",
       "#F9DC24", "#F9DD25", "#F8DF25", "#F8E125", "#F7E225", "#F7E425", "#F6E626",
       "#F6E826", "#F5E926", "#F5EB27", "#F4ED27", "#F3EE27", "#F3F027", "#F2F227",
-      "#F1F426", "#F1F525", "#F0F724", "#F0F921"
-    )
-)
+      "#F1F426", "#F1F525", "#F0F724", "#F0F921"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a viridis palette
 #'
 #' viridis
 #' @description Create a viridis palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' viridis(9)
-#' ggPalette(viridis(9))
-viridis <- grDevices::colorRampPalette(
-    c("#440154", "#440256", "#450457", "#450559", "#46075A", "#46085C", "#460A5D",
+#' ggPalette(viridis(255))
+viridis <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#440154", "#440256", "#450457", "#450559", "#46075A", "#46085C", "#460A5D",
       "#460B5E", "#470D60", "#470E61", "#471063", "#471164", "#471365", "#481467",
       "#481668", "#481769", "#48186A", "#481A6C", "#481B6D", "#481C6E", "#481D6F",
       "#481F70", "#482071", "#482173", "#482374", "#482475", "#482576", "#482677",
@@ -492,21 +787,28 @@ viridis <- grDevices::colorRampPalette(
       "#C0DF25", "#C2DF23", "#C5E021", "#C8E020", "#CAE11F", "#CDE11D", "#D0E11C",
       "#D2E21B", "#D5E21A", "#D8E219", "#DAE319", "#DDE318", "#DFE318", "#E2E418",
       "#E5E419", "#E7E419", "#EAE51A", "#ECE51B", "#EFE51C", "#F1E51D", "#F4E61E",
-      "#F6E620", "#F8E621", "#FBE723", "#FDE725"
-    )
-)
+      "#F6E620", "#F8E621", "#FBE723", "#FDE725"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a cividis palette
 #'
 #' cividis
 #' @description Create a cividis palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' cividis(9)
-#' ggPalette(cividis(9))
-cividis <- grDevices::colorRampPalette(
-    c("#00204D", "#00214E", "#002250", "#002252", "#002353", "#002455", "#002557",
+#' ggPalette(cividis(255))
+cividis <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#00204D", "#00214E", "#002250", "#002252", "#002353", "#002455", "#002557",
       "#002558", "#00265A", "#00275C", "#00275E", "#002860", "#002961", "#002A63",
       "#002A65", "#002B67", "#002C69", "#002C6A", "#002D6C", "#002E6E", "#002E6F",
       "#002F6F", "#002F6F", "#00306F", "#00306F", "#00316F", "#00326F", "#00336F",
@@ -542,21 +844,28 @@ cividis <- grDevices::colorRampPalette(
       "#E9D358", "#EAD357", "#EBD456", "#ECD555", "#EDD654", "#EFD753", "#F0D852",
       "#F1D951", "#F2DA50", "#F3DB4F", "#F4DC4E", "#F6DD4D", "#F7DE4C", "#F8DF4B",
       "#F9E04A", "#FAE149", "#FBE248", "#FDE346", "#FEE445", "#FFE544", "#FFE642",
-      "#FFE742", "#FFE843", "#FFE944", "#FFEA46"
-    )
-)
+      "#FFE742", "#FFE843", "#FFE944", "#FFEA46"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a rocket palette
 #'
 #' rocket
 #' @description Create a rocket palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' rocket(9)
-#' ggPalette(rocket(9))
-rocket <- grDevices::colorRampPalette(
-    c("#03051A", "#04051A", "#05061B", "#06071C", "#07071D", "#08081E", "#0A091F",
+#' ggPalette(rocket(255))
+rocket <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#03051A", "#04051A", "#05061B", "#06071C", "#07071D", "#08081E", "#0A091F",
       "#0B0920", "#0D0A21", "#0E0B22", "#100B23", "#110C24", "#130D25", "#140E26",
       "#160E27", "#170F28", "#180F29", "#1A102A", "#1B112B", "#1D112C", "#1E122D",
       "#20122E", "#211330", "#221331", "#241432", "#251433", "#271534", "#281535",
@@ -592,21 +901,28 @@ rocket <- grDevices::colorRampPalette(
       "#F7C7A8", "#F7C9AA", "#F7CAAC", "#F7CCAF", "#F7CDB1", "#F7CFB3", "#F7D0B5",
       "#F8D1B8", "#F8D3BA", "#F8D4BC", "#F8D6BE", "#F8D7C0", "#F8D9C3", "#F8DAC5",
       "#F8DCC7", "#F9DDC9", "#F9DFCB", "#F9E0CD", "#F9E2D0", "#F9E3D2", "#F9E5D4",
-      "#FAE6D6", "#FAE8D8", "#FAE9DA", "#FAEBDD"
-    )
-)
+      "#FAE6D6", "#FAE8D8", "#FAE9DA", "#FAEBDD"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a mako palette
 #'
 #' mako
 #' @description Create a mako palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' mako(9)
-#' ggPalette(mako(9))
-mako <- grDevices::colorRampPalette(
-    c("#0B0405", "#0D0406", "#0E0508", "#0F0609", "#10060A", "#11070C", "#12080D",
+#' ggPalette(mako(255))
+mako <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#0B0405", "#0D0406", "#0E0508", "#0F0609", "#10060A", "#11070C", "#12080D",
       "#13090F", "#140910", "#150A12", "#160B13", "#170C15", "#180D16", "#190E18",
       "#1A0E19", "#1B0F1A", "#1C101C", "#1D111D", "#1E111F", "#1F1220", "#201322",
       "#211423", "#221425", "#231526", "#241628", "#251729", "#26172B", "#27182D",
@@ -642,21 +958,28 @@ mako <- grDevices::colorRampPalette(
       "#ABE2BE", "#AEE3C0", "#B0E4C1", "#B2E4C2", "#B5E5C4", "#B7E6C5", "#B9E6C7",
       "#BBE7C8", "#BEE8CA", "#C0E9CC", "#C2E9CD", "#C4EACF", "#C6EBD1", "#C8ECD2",
       "#CAEDD4", "#CCEDD6", "#CEEED7", "#D0EFD9", "#D2F0DB", "#D4F1DC", "#D6F1DE",
-      "#D8F2E0", "#DAF3E1", "#DCF4E3", "#DEF5E5"
-    )
-)
+      "#D8F2E0", "#DAF3E1", "#DCF4E3", "#DEF5E5"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
 
 #' Create a turbo palette
 #'
 #' turbo
 #' @description Create a turbo palette.
-#' @param n <numeric>: color number.
+#' @param paletteLength.num <numeric>: color number.
+#' @param space.chr <numeric>: a character string; interpolation in RGB or CIE Lab color spaces. See ?grDevices::colorRamp for more details. (Default "rgb")
+#' @param interpolate.chr <numeric>: use spline or linear interpolation. See ?grDevices::colorRamp for more details. (Default "linear")
+#' @param bias.num <numeric>: a positive number.  Higher values give more widely spaced colors at the high end. See ?grDevices::colorRamp for more details. (Default 1)
 #' @return  A vector of color.
 #' @examples
 #' turbo(9)
-#' ggPalette(turbo(9))
-turbo <- grDevices::colorRampPalette(
-    c("#30123B", "#321543", "#33184A", "#341B51", "#351E58", "#36215F", "#372466",
+#' ggPalette(turbo(255))
+turbo <- function(paletteLength.num=NULL, space.chr='rgb', interpolate.chr='linear', bias.num=1){
+  grDevices::colorRampPalette(
+    colors=c("#30123B", "#321543", "#33184A", "#341B51", "#351E58", "#36215F", "#372466",
       "#38276D", "#392A73", "#3A2D79", "#3B2F80", "#3C3286", "#3D358B", "#3E3891",
       "#3F3B97", "#3F3E9C", "#4040A2", "#4143A7", "#4146AC", "#4249B1", "#424BB5",
       "#434EBA", "#4451BF", "#4454C3", "#4456C7", "#4559CB", "#455CCF", "#455ED3",
@@ -692,6 +1015,9 @@ turbo <- grDevices::colorRampPalette(
       "#C12302", "#BE2102", "#BC2002", "#B91E02", "#B71D02", "#B41B01", "#B21A01",
       "#AF1801", "#AC1701", "#A91601", "#A71401", "#A41301", "#A11201", "#9E1001",
       "#9B0F01", "#980E01", "#950D01", "#920B01", "#8E0A01", "#8B0902", "#880802",
-      "#850702", "#810602", "#7E0502", "#7A0403"
-    )
-)
+      "#850702", "#810602", "#7E0502", "#7A0403"),
+    space=space.chr,
+    interpolate=interpolate.chr,
+    bias=bias.num
+    )(paletteLength.num)
+}
