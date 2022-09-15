@@ -11,7 +11,8 @@
 #' @param alpha.bln <logical>: whether the alpha layer should be returned. (Default FALSE)
 #' @return  A vector of color.
 #' @examples
-#' Hue(paletteLength.num=1,hueRange.num=c(0,120))
+#' Hue(paletteLength.num=9)
+#' ggPalette(Hue(paletteLength.num=9))
 Hue <- function(paletteLength.num=9, rotation.num=NULL, hueRange.num=c(0,360), saturation.num=0.65, lightness.num=0.65, alpha.num=1, alpha.bln=FALSE){
     if(paletteLength.num>2){
         if(is.null(rotation.num)){

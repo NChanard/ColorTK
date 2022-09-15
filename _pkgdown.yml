@@ -36,6 +36,41 @@ reference:
   contents:
   - ggPalette
   - Hue
+  - Blues
+  - BrBG
+  - BuGn
+  - BuPu
+  - GnBu
+  - Greens
+  - Greys
+  - OrRd
+  - Oranges
+  - PiYg
+  - PrGn
+  - PuBu
+  - PuBuGn
+  - PuOr
+  - PuRd
+  - Purples
+  - RdBu
+  - RdGy
+  - RdPu
+  - RdYlBu
+  - RdYlGn
+  - Reds
+  - Spectral
+  - YlGn
+  - YlGnBu
+  - YlOrBr
+  - YlOrRd
+  - cividis
+  - inferno
+  - magma
+  - mako
+  - plasma
+  - rocket
+  - turbo
+  - viridis
 
 articles:
 - title: Other
