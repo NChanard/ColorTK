@@ -32,6 +32,9 @@ MutateColorParameter(
 
 \item{prctMutation.num}{<numeric>: the percentage of modification. Must be between [0-1]. (Default 0.2)}
 }
+\value{
+The mutated color.
+}
 \description{
 Modify a color parameter as saturation, light or alpha parameter.
 }

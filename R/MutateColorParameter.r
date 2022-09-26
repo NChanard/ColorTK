@@ -16,7 +16,7 @@
 #' \item "\%/\%" decreases the choosen parameter of the prctMutation value of the rest; e.g if parameter = 0.4 and prctMutation.num = 0.2 returned parameter=0.32 (0.6 - 0.4*0.2)
 #' }
 #' @param alpha.bln <logical>: whether the alpha layer should be returned. (Default FALSE)
-#' @returnThe mutated color.
+#' @return The mutated color.
 #' @examples
 #' MutateColorParameter(
 #'     color.col="#ebb0107f",
