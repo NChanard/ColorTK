@@ -15,10 +15,10 @@
 #' ConvertColorFormat(c(43.8,0.873,0.492,0.498), alpha.bln=TRUE, format.str="Hex")
 ConvertColorFormat <- function(color.col=NULL, alpha.bln=FALSE, format.str="Hex"){
     format.str <- tolower(format.str)
-    stringr::str_sub(format.str, 1, 1) <- toupper(stringr::str_sub(format.str, 1, 1))
-    if(format.str %in% c("Rgb","Hex","Hsl") & DevTK::NotIn(ColorTK::GetColorFormat(color.col) , c(format.str,"Unknown"))){
-        eval(parse(text=paste0(ColorTK::GetColorFormat(color.col),"2",format.str)))(color.col, alpha.bln) %>% return(.data)
+    substr(format.str, 1, 1) <- toupper(substr(format.str, 1, 1))
+    if(format.str %in% c("Rgb","Hex","Hsl") & DevTK::NotIn(GetColorFormat(color.col) , c(format.str,"Unknown"))){
+        return(eval(parse(text=paste0(GetColorFormat(color.col),"2",format.str)))(color.col, alpha.bln))
     }else{
-        cat("Error\n")
+        stop("ERROR: format.str must be one of 'Rgb','Hex','Hsl'.")
     }
 }

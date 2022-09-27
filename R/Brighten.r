@@ -8,7 +8,7 @@
 #' @examples
 #' Brighten("#ebb0107f",alpha.bln=TRUE)
 Brighten <- function(color.col=NULL, alpha.bln=FALSE){
-    color.col <- ColorTK::MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.5)
-    color.col <- ColorTK::MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="saturation", alpha.bln=alpha.bln, prctMutation.num = 1)
+    color.col <- MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.5)
+    color.col <- MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="saturation", alpha.bln=alpha.bln, prctMutation.num = 1)
     return(color.col)
 }

@@ -8,7 +8,7 @@
 #' @examples
 #' Col2Hex(c(43.8,0.873,0.492,0.498),alpha.bln=TRUE)
 Col2Hex <- function(color.col=NULL, alpha.bln=FALSE){
-    grDevices::col2rgb(color.col, alpha.bln) %>%
-    apply(2,function(rgb.col){ColorTK::Rgb2Hex(rgb.col=rgb.col,alpha.bln=alpha.bln)}) %>%
-    return(.data)
+    color.col <- grDevices::col2rgb(color.col, alpha.bln) |>
+        apply(2,function(rgb.col){Rgb2Hex(rgb.col=rgb.col,alpha.bln=alpha.bln)})
+    return(color.col)
 }

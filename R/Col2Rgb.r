@@ -8,7 +8,6 @@
 #' @examples
 #' Col2Rgb(c("green","red"),alpha.bln=TRUE)
 Col2Rgb <- function(color.col=NULL, alpha.bln=FALSE){
-        grDevices::col2rgb(color.col,alpha.bln) %>%
-        return(.data)
+        return(grDevices::col2rgb(color.col,alpha.bln))
 }
         

@@ -8,6 +8,6 @@
 #' @examples
 #' Pastelize("#ebb0107f",alpha.bln=TRUE)
 Pastelize <- function(color.col=NULL, alpha.bln=FALSE){
-    ColorTK::MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.75) %>% return(.data)
+    return(MutateColorParameter(color.col=color.col, operation.str="=", parameter.str="light", alpha.bln=alpha.bln, prctMutation.num = 0.75))
 }
         

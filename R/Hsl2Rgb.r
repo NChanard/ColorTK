@@ -11,7 +11,7 @@ Hsl2Rgb <- function(hsl.col=NULL, alpha.bln=FALSE){
     if(3>length(hsl.col) | length(hsl.col)>4){
         cat("Error, need 3 or 4 values beetween 0 and 255, first value for hue, second for saturation, third for light and last for alpha")
     }else{
-        if(0<=hsl.col[[1]] & hsl.col[[1]]<360 & (lapply(hsl.col[-1], function(value.num){0<=value.num & value.num<=1}) %>% unlist %>% sort %>% magrittr::extract2(1))){
+        if(IsHsl(hsl.col)){
             if(length(hsl.col) == 3){
                 alpha.num <- 255
             }else{

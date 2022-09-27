@@ -10,11 +10,12 @@
 #' GetColorFormat(c(43.8,0.873,0.492,0.498))
 #' GetColorFormat("green")
 GetColorFormat <- function(color.col=NULL){
-    dplyr::case_when(
-        ColorTK::IsCol(color.col)   ~ "Col",
-        ColorTK::IsHsl(color.col)   ~ "Hsl",
-        ColorTK::IsHex(color.col)   ~ "Hex",
-        ColorTK::IsRgb(color.col)   ~ "Rgb",
+    colorFormat.chr <- dplyr::case_when(
+        IsCol(color.col)   ~ "Col",
+        IsHsl(color.col)   ~ "Hsl",
+        IsHex(color.col)   ~ "Hex",
+        IsRgb(color.col)   ~ "Rgb",
         TRUE ~ "Unknown"
-    ) %>% return(.data)
+    )
+    return(colorFormat.chr)
 }

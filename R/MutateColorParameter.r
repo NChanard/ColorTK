@@ -30,9 +30,9 @@ MutateColorParameter <- function(color.col=NULL, operation.str=NULL, parameter.s
         format.str <- ColorTK::GetColorFormat(color.col)
         if(format.str %in% c("Rgb","Hex")){color.col <- ColorTK::ConvertColorFormat(color.col=color.col, alpha.bln=alpha.bln, format.str="Hsl")}
         if (length(color.col) == 3){
-            color.col %<>% magrittr::set_names(c("hue","saturation","light"))
+            color.col <- stats::setNames(color.col, c("hue","saturation","light"))
         }else{
-            color.col %<>% magrittr::set_names(c("hue","saturation","light","alpha"))
+            color.col <- stats::setNames(color.col, c("hue","saturation","light","alpha"))
         }
         if (operation.str == "="){
             color.col[[parameter.str]] <- prctMutation.num

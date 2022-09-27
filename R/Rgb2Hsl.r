@@ -11,14 +11,15 @@ Rgb2Hsl <- function(rgb.col=NULL, alpha.bln=FALSE){
     if(3>length(rgb.col) | length(rgb.col)>4){
         cat("Error, need 3 or 4 values beetween 0 and 255, first value for red, second for green, third for blue and last for alpha")
     }else{
-        if(lapply(rgb.col, function(value.num){0<=value.num & value.num<=255}) %>% unlist %>% sort %>% magrittr::extract2(1)){
+        if(IsRgb(rgb.col)){
             if(length(rgb.col) == 3){
                 alpha.num <- 1.00
             }else{
                 alpha.num <- rgb.col[4]/255
                 rgb.col <- rgb.col[1:3]
             }
-            rgb.col %<>% magrittr::set_names(NULL) %>% magrittr::divide_by(255)
+            rgb.col <- stats::setNames(rgb.col,NULL)
+            rgb.col <- rgb.col/255
             delta <- rgb.col[which.max(rgb.col)] - rgb.col[which.min(rgb.col)]
             light.num <- (rgb.col[which.max(rgb.col)] + rgb.col[which.min(rgb.col)])/2
             if (delta == 0){

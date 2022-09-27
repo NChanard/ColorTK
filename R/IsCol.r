@@ -9,4 +9,4 @@
 #' IsCol("#FFFFFF")
 #' IsCol(c(125,125,125))
 #' IsCol(c(43.8,0.873,0.492))
-IsCol <- function(color.col=NULL){is.character(color.col) && color.col%in% grDevices::colours()}
+IsCol <- function(color.col=NULL){is.character(color.col) && color.col %in% grDevices::colours()}

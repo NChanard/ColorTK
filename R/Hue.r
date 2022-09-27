@@ -23,9 +23,9 @@ Hue <- function(paletteLength.num=9, rotation.num=NULL, hueRange.num=c(0,360), s
             }
         }
         if(sign(diff(hueRange.num))!=sign(rotation.num)){
-            hueRange.num[which.min(hueRange.num)] %<>% magrittr::add(360)
+            hueRange.num[which.min(hueRange.num)] <- hueRange.num[which.min(hueRange.num)] + 360
         }
-        distGap.num = seq(hueRange.num[1],hueRange.num[2],length.out=paletteLength.num) %>% diff %>% mean %>% abs
+        distGap.num = seq(hueRange.num[1],hueRange.num[2],length.out=paletteLength.num) |> diff() |> mean() |> abs()
         gap.num = min(abs(diff(hueRange.num)%%360),abs(360-abs(diff(hueRange.num)%%360)))
         if(paletteLength.num>1 && gap.num<distGap.num){
             adjust.num = ((distGap.num-gap.num)/(paletteLength.num+1) * paletteLength.num)
@@ -33,12 +33,13 @@ Hue <- function(paletteLength.num=9, rotation.num=NULL, hueRange.num=c(0,360), s
         }
         hue.lst <- seq(hueRange.num[1],hueRange.num[2],length.out=paletteLength.num)%%360
     }else if(paletteLength.num==2){
-        hue.lst <- ColorTK::Hue(paletteLength.num=5, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[c(2,3)]
+        hue.lst <- Hue(paletteLength.num=5, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[c(2,3)]
     }else if(paletteLength.num==1){
-        hue.lst <- ColorTK::Hue(paletteLength.num=3, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[2]
+        hue.lst <- Hue(paletteLength.num=3, rotation.num=rotation.num, hueRange.num=hueRange.num, saturation.num=saturation.num, lightness.num=lightness.num, alpha.num=alpha.num, alpha.bln=alpha.bln)[2]
     }
     if(is.numeric(hue.lst)){
-        lapply(hue.lst,function(hue.num){ColorTK::Hsl2Hex(c(hue=hue.num,saturation=saturation.num,light=lightness.num,alpha=alpha.num), alpha.bln=alpha.bln)}) %>% unlist %>% return(.data)
+        hue.lst <- lapply(hue.lst,function(hue.num){Hsl2Hex(c(hue=hue.num,saturation=saturation.num,light=lightness.num,alpha=alpha.num), alpha.bln=alpha.bln)}) |> unlist()
+        return(hue.lst)
     }else{
         return(hue.lst)
     }

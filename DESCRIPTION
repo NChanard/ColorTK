@@ -12,10 +12,7 @@ Imports:
     DevTK,
     dplyr,
     ggplot2,
-    grDevices,
-    magrittr,
-    rlang,
-    stringr
+    grDevices
 Suggests:
     covr,
     knitr,

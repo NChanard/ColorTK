@@ -8,6 +8,6 @@
 #' @examples
 #' Hex2Hsl("#ebb0107f",alpha.bln=TRUE)
 Hex2Hsl <- function(hex.col=NULL, alpha.bln=FALSE){
-    grDevices::col2rgb(hex.col,  alpha.bln) %>% ColorTK::Rgb2Hsl(alpha.bln) %>%
-    return(.data)
+    rgb.col <- grDevices::col2rgb(hex.col,  alpha.bln)[,1]
+    return(Rgb2Hsl(rgb.col,alpha.bln))
 }
