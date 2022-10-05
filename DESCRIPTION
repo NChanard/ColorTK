@@ -4,6 +4,9 @@ Title: Set of colour manipulation tools
 Version: 0.1.0
 Author: Nicolas Chanard <nicolas.chanard@univ-tlse3.fr>
 Maintainer: Nicolas Chanard <nicolas.chanard@univ-tlse3.fr>
+URL:
+    https://nchanard.github.io/ColorTK/,
+    https://github.com/NChanard/ColorTK
 Description: Set of colour manipulation tools.
 License: MIT + file LICENSE
 Depends:
