@@ -27,7 +27,7 @@ Set of colour manipulation tools.
 You can install the development version of ColorTK from [GitHub](https://github.com/) with:
 
 ``` r
-devtools::install_github("NChanard/ColorTK")
+remotes::install_github("NChanard/ColorTK")
 ```
 
 ## Documentation  
